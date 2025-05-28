@@ -10,6 +10,7 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
+            // Single point-of-entry
             MainLoopFunction.runLoop();
         }
     }
