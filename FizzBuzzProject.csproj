@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{6B8CC82D-B08C-439E-82EF-91176056E693}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>CPlayground</RootNamespace>
-    <AssemblyName>CPlayground</AssemblyName>
+    <RootNamespace>FizzBuzz</RootNamespace>
+    <AssemblyName>FizzBuzz</AssemblyName>
     <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -49,6 +49,7 @@
     <Compile Include="MainLoopFunction.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserInputFunction.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

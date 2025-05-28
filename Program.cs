@@ -4,16 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CPlayground
+namespace FizzBuzz
 {
     class Program
     {
         static void Main(string[] args)
         {
                        
-            double numInput = ConvertToNumFunction.GetNum();
+            // double numInput = ConvertToNumFunction.GetNum();
 
-            CalcModFunction.calcMod(numInput);
+            // CalcModFunction.calcMod(numInput);
 
             // Added to leave console open even if started without debugging
             Console.ReadLine();
