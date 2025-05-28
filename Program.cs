@@ -10,13 +10,7 @@ namespace FizzBuzz
     {
         static void Main(string[] args)
         {
-                       
-            // double numInput = ConvertToNumFunction.GetNum();
-
-            // CalcModFunction.calcMod(numInput);
-
-            // Added to leave console open even if started without debugging
-            Console.ReadLine();
+            MainLoopFunction.runLoop();
         }
     }
 }

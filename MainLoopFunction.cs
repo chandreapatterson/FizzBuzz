@@ -9,9 +9,24 @@ namespace FizzBuzz
     public static class MainLoopFunction
     {
         public static void runLoop()
-        {
-            string userInput = UserInputFunction.getStr();
-            double numInput = ConvertToNumFunction.GetNum(userInput);
+        {         
+            while (true) {
+
+                string userInput = UserInputFunction.getStr();
+
+                if (!userInput.Equals("q"))
+                {
+                    double numInput = ConvertToNumFunction.GetNum(userInput);
+                    CalcModFunction.calcMod(numInput);
+                }
+                else
+                {
+                    break;
+                }
+            }
+
+            ExitFunction.exitProg();
+
         }
     }
 }

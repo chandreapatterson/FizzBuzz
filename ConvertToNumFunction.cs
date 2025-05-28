@@ -11,10 +11,10 @@ namespace FizzBuzz
     {
         public static double GetNum(string userInput)
         {
-
             // Convert user input to double type
             double numInput = Convert.ToDouble(userInput);
 
+            // Return numInput double
             return numInput;
         }
     }
