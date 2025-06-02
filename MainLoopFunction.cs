@@ -16,22 +16,32 @@ namespace FizzBuzz
                 // Store user input
                 string userInput = UserInputFunction.getStr();
 
+                // Check for non-number
+                bool errorPresent = ErrorHandlingFunction.NumTry(userInput);
+
                 // Check user input for number or q to quit
-                if (!userInput.Equals("q"))
+                if (!userInput.Equals("q") & !errorPresent)
                 {
-                    // Convert input to double data type and perform mod
+                    // Convert input to double data type
                     double numInput = ConvertToNumFunction.GetNum(userInput);
+
+                    // Perform mod
                     CalcModFunction.calcMod(numInput);
+                }
+                else if (!userInput.Equals("q") & errorPresent)
+                {
+                    Console.WriteLine("Please enter a number or enter q to quit...");
+                    // Continue
+                    continue;
                 }
                 else
                 {
-                    // Break out of loop
-                    break;
+                    // Quit program
+                    ExitFunction.exitProg();
                 }
             }
 
-            // Quit program with exit code 0
-            ExitFunction.exitProg();
+
         }
     }
 }

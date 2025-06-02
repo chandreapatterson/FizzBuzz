@@ -45,6 +45,7 @@
   <ItemGroup>
     <Compile Include="CalcModFunction.cs" />
     <Compile Include="ConvertToNumFunction.cs" />
+    <Compile Include="ErrorHandlingFunction.cs" />
     <Compile Include="ExitFunction.cs" />
     <Compile Include="MainLoopFunction.cs" />
     <Compile Include="Program.cs" />
