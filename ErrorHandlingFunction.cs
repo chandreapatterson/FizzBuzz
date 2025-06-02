@@ -8,6 +8,7 @@ namespace FizzBuzz
 {
     public static class ErrorHandlingFunction
     {
+        // Set error to true or false based on convertible to integer
         public static bool NumTry(string userInput)
         {
             try {
