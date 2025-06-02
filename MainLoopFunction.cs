@@ -20,7 +20,12 @@ namespace FizzBuzz
                 bool errorPresent = ErrorHandlingFunction.NumTry(userInput);
 
                 // Check user input for number or q to quit
-                if (!userInput.Equals("q") & !errorPresent)
+                if (userInput.Equals("0"))
+                {
+                    Console.WriteLine("Number must be an integer greater than 0.");
+                    continue;
+                }
+                else if (!userInput.Equals("q") & !errorPresent)
                 {
                     // Convert input to double data type
                     double numInput = ConvertToNumFunction.GetNum(userInput);
@@ -40,8 +45,6 @@ namespace FizzBuzz
                     ExitFunction.exitProg();
                 }
             }
-
-
         }
     }
 }
